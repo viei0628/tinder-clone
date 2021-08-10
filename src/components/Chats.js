@@ -6,6 +6,7 @@ function Chats() {
     return (
         <div className="chats">
             <Chat 
+                key={Math.random()}
                 name="Mark Cuban"
                 message="YO what's up!"
                 timestamp="35 minutes ago"

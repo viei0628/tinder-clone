@@ -33,7 +33,7 @@ function TinderCards() {
             {people.map((person) => (
                 <TinderCard
                     className="swipe"
-                    key={Math.random()}
+                    key={Math.random()*Math.random()}
                     preventSwipe={['up', 'down']}
                     onSwipe={(dir) => swiped(dir, person.name)}
                     onCardLeftScreen={() => outOfFrame(person.name)}
