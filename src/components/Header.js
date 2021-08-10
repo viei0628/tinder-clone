@@ -16,7 +16,10 @@ function Header({ backButton }) {
                 </IconButton>
             ) : (
                 <IconButton>
-                    <PersonIcon fontSize="large" className='header__icon'/>
+                    <Link to="/profile">
+                        <PersonIcon fontSize="large" className='header__icon'/>
+                    </Link>
+
                 </IconButton>
             )}
             <Link to="/">
